@@ -16,7 +16,7 @@ npm start
 ```
 npm run make
 ```
-find .deb install file in ./out/make/deb/x64/monthly-cost_1.0.0_amd64.deb
+find .deb install file in **./out/make/deb/x64/monthly-cost_1.0.0_amd64.deb**
 and install this deb pakage / this app
 
 ### Sreens

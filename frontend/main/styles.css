@@ -1,0 +1,192 @@
+/* MAIN ................................ */
+.main{
+  gap: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: 1fr  min-content;
+  grid-template-rows:  5rem 1fr;
+  grid-template-areas: 
+    "frame_1 frame_2"
+    "frame_3 frame_3";
+}
+
+.main .frame-title{
+  grid-area: frame_1;
+  background-color: #333;
+}
+.main .frame-buttons{
+  grid-area: frame_2;
+  background-color: #333;
+}
+
+.main .frame-content{
+  grid-area: frame_3;
+  background-image: url(./img/1.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main .frame-content .wrapper{
+  padding: 2.4rem 1.8rem 3rem 1.8rem;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* MAIN ................................ */
+
+
+/* TITLE ................................ */
+.main .frame-title .title{
+  line-height: 5rem;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+
+/* CONTENT ................................ */
+.main .frame-content .content{   
+  background-color: rgb(255 255 255 / 100%);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
+}
+
+
+/* GROUP ................................ */
+.main-group-row{
+  position: relative;
+  min-height: 4rem;
+  border-bottom: #D8D9CF solid 1px;
+  background-color: #EDEDED;
+}
+
+.main-group-row > .name{
+  position: relative;
+  padding: 0 1.2rem;
+  line-height: 4rem;
+  min-height: 4rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.main-group-row > .buttons{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+  height: 4rem;
+  padding: 0 0;
+}
+.main-group-row:hover > .buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+/* GROUP ................................ */
+
+
+/* COST ................................ */
+.main-cost-row{
+  position: relative;
+  min-height: 4rem;
+  border-bottom: #e6e7e0 solid 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}
+.main-cost-row:hover{
+  background-color: #fff;
+}
+
+.main-cost-row[active="0"]{
+  opacity: 0.4;
+}
+
+.main-cost-row > .name{
+  position: relative;
+  padding: 0 1.4rem;
+  line-height: 4rem;
+  min-height: 4rem;
+  font-size: 1.4rem;
+}
+.main-cost-row[active="0"] > .name{
+  text-decoration: line-through;
+}
+
+.main-cost-row > .price{
+  position: relative;
+  padding: 0 1.2rem;
+  line-height: 4rem;
+  min-height: 4rem;
+  text-align: right;
+  font-size: 1.4rem;
+}
+.main-cost-row[active="0"] > .price{
+  text-decoration: line-through;
+}
+
+.main-cost-row > .buttons{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+  height: 4rem;
+  padding: 0 0;
+  background-color: #fff;
+}
+.main-cost-row:hover > .buttons{
+  display: flex;
+  flex-direction: row;
+}
+/* COST ................................ */
+
+
+/* TOTAL ................................ */
+.main-group-total{
+  position: relative;
+  min-height: 4rem;
+  border-bottom: #ddd solid 1px;
+}
+.main-group-total .total{
+  position: relative;
+  padding: 0 1.4rem;
+  line-height: 4rem;
+  min-height: 4rem;
+  font-size: 1.4rem;
+  text-align: right;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* TOTAL ................................ */
+.main-total{
+  position: relative;
+  height: 4.5rem;
+  background-color: #333;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:flex-end;
+  padding: 0 1.4rem;
+}
+
+.main-total .label ,
+.main-total .total{
+  position: relative;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  text-align: right;
+  font-weight: bold;
+  color: #fff;
+}
+.main-total .total{
+  padding: 0 0 0 0.6rem;
+}

@@ -1,0 +1,69 @@
+.alert{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; 
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-container{
+    position: relative;
+    z-index: 2;
+    width: 26rem;
+    height: auto;
+    margin: 10% auto;
+    padding: 0;
+    background-color: #fff;
+    display: block;
+      -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+}
+
+.alert-icon{
+    font-size: 10rem;
+    line-height: 10rem;
+    width: 10rem;
+    margin: 3.3rem auto 1.5rem auto;
+}
+
+.alert-message{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1.2rem;
+    line-height: 1.6;
+}
+
+.alert-buttons{
+    margin: 1.6rem auto 4rem auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.alert-buttons .button{
+    font-size: 1.4rem;
+    width: 8rem;
+    line-height: 3.8rem;
+    margin: 0 0.8rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 120ms linear;
+    user-select: none;
+}
+.alert-buttons .button-ok{
+    background-color: #333;
+}
+.alert-buttons .button-ok:hover{
+    background-color: #222;
+}

@@ -1,0 +1,77 @@
+.confirm{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; 
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-container{
+    position: relative;
+    z-index: 2;
+    width: 26rem;
+    height: auto;
+    margin: 10% auto;
+    padding: 0;
+    background-color: #fff;
+    display: block;
+      -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+}
+
+
+.confirm-icon{
+    font-size: 10rem;
+    line-height: 10rem;
+    width: 10rem;
+    margin: 3.3rem auto 1.5rem auto;
+}
+
+
+.confirm-message{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.confirm-buttons{
+    margin: 1.6rem auto 4rem auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.confirm-buttons .button{
+    font-size: 1.4rem;
+    width: 8rem;
+    line-height: 3.8rem;
+    margin: 0 0.8rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 120ms linear;
+    user-select: none;
+}
+
+.confirm-buttons .button-no{
+    background-color: #C70007;
+}
+.confirm-buttons .button-no:hover{
+    background-color: #a30006;
+}
+
+.confirm-buttons .button-yes{
+    background-color: #00C785;
+}
+.confirm-buttons .button-yes:hover{
+    background-color: #00b377;
+}

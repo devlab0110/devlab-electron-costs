@@ -1,0 +1,68 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; 
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container{
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+    gap: 0px;
+    width: 50%;
+    height: auto;
+    margin: 18% auto auto auto;
+    padding: 0;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 1fr  min-content;
+    grid-template-rows:  5rem 1fr;
+    grid-template-areas: 
+      "frame_1 frame_2"
+      "frame_3 frame_3";
+
+      -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+      box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.58);
+}
+
+.modal-title ,
+.modal-close ,
+.modal-content{
+    background-color: #fff;
+}
+
+.modal-title{
+    grid-area: frame_1;
+    line-height: 5rem;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-close{
+    grid-area: frame_2;
+    background-color: #333;
+}
+.modal-close-button{
+    width: 5rem;
+    line-height: 5rem;
+    color: #fff;
+}
+
+.modal-content{
+    grid-area: frame_3;
+    padding: 0;
+}

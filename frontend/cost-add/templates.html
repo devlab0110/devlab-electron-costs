@@ -1,0 +1,48 @@
+<!-- BUTTON ---------------------->
+<template name="cost-add-button">
+    <div 
+        class="button button-icon" 
+        title="добави разход"
+    >add</div>
+</template>
+  
+<!-- FORM ---------------------->
+<template name="cost-add-form">
+
+    <div class="cost-add-form form-rows">
+
+        <input 
+            class="input input-group-id"
+            type="hidden"
+        >
+
+        <div class="form-rows-input">
+            <label class="label">Име</label>
+            <input 
+                class="input input-name"
+                type="text"
+            >
+        </div>
+      
+        <div class="form-rows-input">
+            <label class="label">Цена</label>
+            <input 
+                class="input input-price"
+                type="number"
+                inputmode="decimal"
+                step="0.01"
+                value="0"
+            >
+        </div>
+
+        <div class="form-rows-buttons">
+            <div 
+                class="button-add button-text"
+                title="добави"
+            >добави</div>
+        </div>
+
+    </div>
+
+</template>
+<!-- FORM ---------------------->

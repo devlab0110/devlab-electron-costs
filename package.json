@@ -1,0 +1,38 @@
+{
+  "name": "monthly-cost",
+  "productName": "monthly-cost",
+  "version": "1.0.0",
+  "description": "Monthly cost editor",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "dhf",
+  "license": "MIT",
+  "dependencies": {
+    "devlab-electron": "file:./packages/devlab-electron",
+    "devlab-electron-app": "file:./packages/devlab-electron-app",
+    "devlab-electron-backend": "file:./packages/devlab-electron-backend",
+    "devlab-electron-logger": "file:./packages/devlab-electron-logger",
+    "devlab-electron-provider": "file:./packages/devlab-electron-provider",
+    "electron-squirrel-startup": "^1.0.0",
+    "extend": "^3.0.2",
+    "moment": "^2.29.4",
+    "nedb": "^1.8.0",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.0.2"
+  }
+}

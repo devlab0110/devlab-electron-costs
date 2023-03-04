@@ -1,0 +1,306 @@
+/* RESET ...............................*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET ...............................*/
+
+
+/* FONT ...............................*/
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('./fonts/comfortaa-regular.woff') format('woff'); 
+}
+/* FONT ...............................*/
+
+
+/* COMMON ................................ */
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+  /* font-family: Tahoma, sans-serif; */
+  font-family: Comfortaa;
+  font-size: 1.6rem;
+	border: 0;
+  color: #555;
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* COMMON ................................ */
+
+
+/* SCROLL ................................ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #d9d9d9;
+  scrollbar-color: #989898 #d9d9d9;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #d9d9d9;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  background-color: #989898;
+  border-radius: 0px;
+  border: 2px solid #d9d9d9;
+}
+
+
+/* ICON FONT ................................ */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    url(./icons/material-icons-outlined-regular.otf) format('truetype');
+}
+
+/* ICONS ................................ */
+.alert-icon ,
+.confirm-icon{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem;
+  display: block;
+  line-height: 4rem;
+  width: 4rem;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 0;
+  margin: 0 auto;
+  color: #555;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+.confirm-icon{
+  color: #555;
+}
+.alert-icon{
+  color: #ffd700;
+}
+/* ICONS ................................ */
+
+
+
+/* BUTTON ICON ................................ */
+.button-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem;  /* Preferred icon size */
+  display: block;
+  line-height: 4rem;
+  width: 4rem;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 0;
+  margin: 0;
+  color: #555;
+  user-select: none;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  cursor: pointer;
+
+  transition: color 60ms linear;
+}
+.button-icon:hover{
+  color:  #197af5;
+  color:  #FF8C00;
+}
+/* BUTTON ICON ................................ */
+
+/* BUTTON TEXT ................................ */
+.button-text {
+  display: block;
+  margin: 0;
+  padding: 0 1.6rem;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;  
+  line-height: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #2196f3;
+  user-select: none;
+  cursor: pointer;
+  transition: 
+    background-color 120ms linear 
+  ;
+}
+.button-text:hover{
+  background-color: #137acb;
+}
+/* BUTTON TEXT ................................ */
+
+
+/* APP ................................ */
+.app{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+	padding: 0;
+	border: 0;
+  overflow: auto;
+  position: relative;
+  background-color: #197af5;
+}
+
+/* TITLES ................................ */
+.title-1{
+  padding:0;
+  margin: 0;
+  line-height: 1;
+  font-size: 2.2rem;
+  /* font-weight: bold; */
+}
+
+/* TEXTS ................................ */
+.text-overflow{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* LABELS ................................ */
+.label{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  display: block;
+  color: #333;
+}
+
+/* INPUTS ................................ */
+.input{
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  display: block;
+  color: #555;
+}
+.input[type="number"],
+.input[type="text"]{
+   padding: 0 10px;
+   width: 100%;
+   height: 3.8rem;
+}
+
+.select{
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  display: block;
+  padding: 0 10px;
+  width: 100%;
+  height: 3.8rem;
+  background-color: #fff;
+  color: #555;
+}
+
+.select:focus ,
+.input[type="number"]:focus,
+.input[type="text"]:focus{
+  outline: none;
+  border: 1px solid #add2ff;
+}
+/* INPUTS ................................ */
+
+
+/* FORM-ROWS ................................ */
+.form-rows-input{
+  padding: 1rem 1rem;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.form-rows-buttons{
+  padding: 1rem 1rem 0.8rem 1rem;
+  text-align: right;
+}
+.form-rows-buttons .button-text{
+  display: inline-block;
+  width: auto;
+  margin-left: 1rem;
+}
+/* FORM-ROWS ................................ */
+
